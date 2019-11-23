@@ -7,17 +7,15 @@ The project tests the person’s reaction in a VR environment that visualizes a 
 
 *this project is based on Fove sample , the files that I wrote/edited might be found at the folders : Objects, LogsMethods, Scene and GameProcess. later at this article I will describe a few of them.*
 
-![alt text](https://github.com/amitme10/EyesGazeRecognitionFove/master/expl.png)
-
-
+![alt text](https://raw.githubusercontent.com/amitme10/EyesGazeRecognitionFove/master/expl.png)
 # Examples from the dashboard
 
 So as I mentioned before the main purpose of the project is to analyze the data , so I created a dashboard that helps with it , a few charts of examples :
 
-![alt text](https://github.com/amitme10/EyesGazeRecognitionFove/master/heatMap.png)
+![alt text](https://raw.githubusercontent.com/amitme10/EyesGazeRecognitionFove/master/heatMap.png)
 
 
-![alt text](https://github.com/amitme10/EyesGazeRecognitionFove/master/chart.png)
+![alt text](https://raw.githubusercontent.com/amitme10/EyesGazeRecognitionFove/master/chart.png)
 
 
 # How was the Unity Project built?
