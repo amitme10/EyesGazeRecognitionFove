@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-public class collID
+public class CollID
 {
     int collider;
     Guid guid;
 
-    public collID(int collider, Guid guid)
+    public CollID(int collider, Guid guid)
     {
         this.collider = collider;
         this.guid = guid;

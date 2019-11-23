@@ -3,17 +3,12 @@
 
 public class FOVE3DCursor : MonoBehaviour
 {
-    public enum LeftOrRight
-    {
-        Left,
-        Right
-    }
 
     [SerializeField]
-    public LeftOrRight whichEye;
+    public Direction whichEye;
     public FoveInterfaceBase foveInterface;
 
-
+    Logger log;
     // Use this for initialization
     void Start()
     {
@@ -24,20 +19,20 @@ public class FOVE3DCursor : MonoBehaviour
     {
         FoveInterfaceBase.EyeRays rays = foveInterface.GetGazeRays();
 
-        Ray r = whichEye == LeftOrRight.Left ? rays.left : rays.right;
+        Ray r = whichEye == Direction.Left ? rays.left : rays.right;
 
         RaycastHit hit;
         Physics.Raycast(r, out hit, Mathf.Infinity);
 
-        if (whichEye == LeftOrRight.Left)
+        if (whichEye == Direction.Left)
         {
-            logger.leftX = hit.point.x.ToString();
-            logger.leftY = hit.point.y.ToString();
+            log.leftX = hit.point.x.ToString();
+            log.leftY = hit.point.y.ToString();
         }
         else
         {
-            logger.rightX = hit.point.x.ToString();
-            logger.rightY = hit.point.y.ToString();
+            log.rightX = hit.point.x.ToString();
+            log.rightY = hit.point.y.ToString();
         }
 
 
